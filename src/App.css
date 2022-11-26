@@ -9,18 +9,6 @@
   grid-template-columns: 1fr 15fr;
   grid-gap: 0px;
 }
-.header {
-  background-color: rgb(12, 230, 238);
-  grid-area: h;
-}
-.header img {
-  width: 100px;
-}
-.nav {
-  grid-area: n;
-  background-color: burlywood;
-}
-.content {
-  background-color: cornflowerblue;
-  grid-area: c;
-}
+
+
+
