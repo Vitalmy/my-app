@@ -4,7 +4,11 @@ const Post = () => {
   return (
     <div className={classes.item}> 
       <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png" />
-      post 1</div>
+      post 1
+      <div>
+      <span>Like</span>
+      </div>
+      </div>
   );
 };
 export default Post;
