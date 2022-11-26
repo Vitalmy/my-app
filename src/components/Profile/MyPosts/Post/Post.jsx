@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "./Post.module.css";
-const Post = () => {
+const Post = (props) => {
   return (
     <div className={classes.item}> 
       <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png" />
-      post 1
+     { props.message} 
       <div>
-      <span>Like</span>
+      <span>Like ♥ {props.likes} </span>
       </div>
       </div>
   );
