@@ -19,8 +19,8 @@ const Navbar = () => {
       <NavLink to="/music" className={setClass}>Music</NavLink>
       </div>
       <div>
-        <NavLink to="/settings" className={setClass}>Settings</NavLink>
-        </div>
+      <NavLink to="/settings" className={setClass}>Settings</NavLink>
+      </div>
     </nav>
   );
 };
