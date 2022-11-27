@@ -10,5 +10,9 @@
   grid-gap: 0px;
 }
 
-
+.app-wrapper-content {
+  background-color: cornflowerblue;
+  grid-area: c;
+  color: lawngreen
+}
 
