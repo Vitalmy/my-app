@@ -6,7 +6,7 @@ const Post = (props) => {
       <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png" />
      { props.message} 
       <div>
-      <span>Like ♥ {props.likes} </span>
+      <span>Like ♥ {props.likesCount} </span>
       </div>
       </div>
   );
