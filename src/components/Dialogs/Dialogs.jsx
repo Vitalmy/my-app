@@ -5,10 +5,10 @@ import DialogItem from "./DialogItem/DialogItem";
 
 const Dialogs = (props) => {
 
-  let newPostElement = React.createRef();
+  let newMessageElement = React.createRef();
 
-let addPost = () => {
-  let text = newPostElement.current.value;
+let addMessage = () => {
+  let text = newMessageElement.current.value;
   alert(text)
 };
   
@@ -27,9 +27,9 @@ let messagesElements = props.state.messages.map( m => <Message message={m.messag
   {messagesElements}
 </div>
 <div>
-  <textarea ref={newPostElement}> </textarea>
+  <textarea ref={newMessageElement}> </textarea>
   <div>
-    <button onClick={addPost}>Add Post</button>
+    <button onClick={addMessage}>Add Message</button>
   </div>
 </div>
     </div>
