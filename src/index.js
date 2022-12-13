@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = () => {
   root.render(
     <React.StrictMode>
       <App state={store.getState()} dispatch={store.dispatch.bind(store)} />

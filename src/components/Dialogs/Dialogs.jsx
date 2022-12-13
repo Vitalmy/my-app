@@ -11,8 +11,8 @@ const Dialogs = (props) => {
   let addMessage = () => {
     props.dispatch(addMessageActionCreator());
   };
-  let onMessageChange = () => {
-    let text = newMessageElement.current.value;
+  let onMessageChange = (e) => {
+    let text = e.target.value;
     let action = updateNewMessageTextActionCreator(text);
     props.dispatch(action);
   };
@@ -23,6 +23,7 @@ const Dialogs = (props) => {
   let messagesElements = props.dialogsPage.messages.map((m) => (
     <Message message={m.message} />
   ));
+  let newMessageText = props.dialogsPage.newMessageText;
 
   return (
     <div className={s.dialogs}>
@@ -31,10 +32,10 @@ const Dialogs = (props) => {
       <div className={s.messages}>
         {messagesElements}
         <div>
-          <textarea
+          <textarea placeholder="Enter your message"
             onChange={onMessageChange}
             ref={newMessageElement}
-            value={props.dialogsPage.newMessageText}
+            value={newMessageText}
           />
           <div>
             <button onClick={addMessage}>Add Message</button>

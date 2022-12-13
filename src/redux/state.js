@@ -28,7 +28,7 @@ let store = {
         { id: 4, message: "Yoo" },
         { id: 5, message: "Wow" },
       ],
-      newMessageText: "vvedi",
+      newMessageText: "",
     },
   },
   _rerenderEntireTree() {},
@@ -53,7 +53,7 @@ let store = {
       this._rerenderEntireTree(this._state);
     } else if (action.type === ADD_MESSAGE) {
       let newMessage = {
-        id: 5,
+        id: 6,
         message: this._state.dialogsPage.newMessageText,
       };
       this._state.dialogsPage.messages.push(newMessage);
