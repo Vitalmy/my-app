@@ -1,7 +1,9 @@
 // const ADD_POST = "ADD-POST";
 // const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
-const sidebarReducer = (state, action) => {
+let initialState = {};
+
+const sidebarReducer = (state=initialState, action) => {
     switch(action.type) {
         // case ADD_POST: let newPost = {
         //     id: 5,
