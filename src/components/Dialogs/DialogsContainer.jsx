@@ -10,10 +10,10 @@ dialogsPage: state.dialogsPage
 };
 let mapDispatchToProps = (dispatch) => {
 return {
-  updateNewMessageText: () => {
+  addMessage: () => {
     dispatch(addMessageActionCreator());
   },
-  addMessage: (text) => {
+  updateNewMessageText: (text) => {
     dispatch(updateNewMessageTextActionCreator(text));
   }
 }
