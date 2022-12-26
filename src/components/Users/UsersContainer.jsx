@@ -1,8 +1,6 @@
 import React from "react";
-import { connect } from "react-redux";
-import axios from "axios";
-import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
+import Users from "./Users";
 import {
   follow,
   setCurrentPage,
@@ -12,6 +10,7 @@ import {
   unfollow,
 } from "../../redux/users-reduser";
 import { usersAPI } from "../../api/api";
+import { connect } from "react-redux";
 import { toggleFollowingProgress } from "../../redux/users-reduser";
 
 class UsersContainer extends React.Component {
