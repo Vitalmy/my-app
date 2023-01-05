@@ -1,16 +1,12 @@
 import React from "react";
-import s from "./Profile.module.css";
 import Profile from "./Profile";
 import { connect } from "react-redux";
-import axios from "axios";
 import {
   getUserProfile,
   getStatus,
   updateStatus,
 } from "../../redux/profile-reducer";
-import { Navigate, useParams } from "react-router-dom";
-import { usersAPI } from "../../api/api";
-import { withAuthRedirect } from "../../hoc/withAuthRedirect";
+import { useParams } from "react-router-dom";
 import { compose } from "redux";
 
 function withRouter(Children) {
