@@ -13,3 +13,7 @@ color: white;
 .loginBlock a {
   color: white;
   }
+.logo {
+  border-radius: 30px;
+  border: 2px #ccc solid;
+}
